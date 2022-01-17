@@ -2,6 +2,10 @@
 
 This is strongly inspired by the [neovim from scratch](https://github.com/lunarvim/neovim-from-scratch/tree/master) series.
 
+```shell
+git clone https://github.com/Evergreen200/neovim-config.git ~/.config/nvim
+```
+
 ------
 
 ## Plugins used
