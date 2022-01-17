@@ -5,6 +5,8 @@ This is strongly inspired by the [neovim from scratch](https://github.com/lunarv
 ------
 
 ## Plugins used
+
+### Basic Plugins
 - [packer](https://github.com/wbthomason/packer.nvim)
 - [popup](https://github.com/nvim-lua/popup.nvim)
 - [plenary](https://github.com/nvim-lua/plenary.nvim)
@@ -16,11 +18,10 @@ This is strongly inspired by the [neovim from scratch](https://github.com/lunarv
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [toggleterm](https://github.com/akinsho/toggleterm.nvim)
 
---------
 ### Colorscheme
 - [rose-pine](https://github.com/rose-pine/neovim)
---------
 
+### Completion
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
 - [cmp-path](https://github.com/hrsh7th/cmp-path)
@@ -29,16 +30,21 @@ This is strongly inspired by the [neovim from scratch](https://github.com/lunarv
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
 - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
 
+### Snippets
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
+### LSP
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer)
 
+### Fuzzy Finding
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [telescope-media-files](https://github.com/nvim-telescope/telescope-media-files.nvim)
 
+### Syntax Highliting
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 
+### Git
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
