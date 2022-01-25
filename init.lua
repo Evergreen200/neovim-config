@@ -1,6 +1,5 @@
 require "user.options"
 require "user.keymaps"
-require "user.colorscheme"
 require "user.plugins"
 require "user.cmp"
 require "user.lsp"
@@ -12,4 +11,9 @@ require "user.nvim-tree"
 require "user.bufferline"
 require "user.lualine"
 --> ...
+require "user.notify"
+require "user.colorscheme"
 require "user.toggleterm"
+require "user.whichkey"
+--> ...
+-- require "user.markdown_preview"

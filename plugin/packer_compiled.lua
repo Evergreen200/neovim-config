@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/neovim",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -149,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -158,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
-    url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -203,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/arnomanthey/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
