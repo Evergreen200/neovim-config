@@ -73,6 +73,8 @@ return packer.startup(function(use)
 
   -- Colorscheme
   use "rose-pine/neovim"
+  use "folke/tokyonight.nvim"
+  use "marko-cerovac/material.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"

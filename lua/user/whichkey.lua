@@ -81,10 +81,6 @@ local opts = {
 local mappings = {
   ["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" },
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  ["b"] = {
-    "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-    "Buffers",
-  },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
@@ -96,6 +92,21 @@ local mappings = {
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+
+  b = {
+    name = "Bufferline",
+    b = {
+      "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+      "Buffers",
+    },
+    c = { "<cmd>BufferLinePickClose<cr>", "Pick Close" },
+    l = { "<cmd>BufferLineCloseLeft<cr>", "Close Left" },
+    n = { "<cmd>BufferLineCycleNext<cr>", "Cycle Next" },
+    p = { "<cmd>BufferLineCyclePrev<cr>", "Cycle Previous" },
+    r = { "<cmd>BufferLineCloseRight<cr>", "Close Right" },
+    s = { "<cmd>BufferLineSortByExtension<cr>", "Sort" },
+    o = { " <cmd>BufferLinePick<cr>", "Pick Open" },
+  },
 
   p = {
     name = "Packer",
@@ -167,6 +178,8 @@ local mappings = {
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+    s = { "<cmd>Telescope git_status<cr>", "Status" },
+    C = { "<cmd>Telescope git_commits<cr>", "Commits" },
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
