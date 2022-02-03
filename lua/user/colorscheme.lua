@@ -1,4 +1,4 @@
-local default_colorscheme = "rose-pine"
+local default_colorscheme = require("user.settings").colorscheme
 
 local colorschemes = {
   "rose-pine",
@@ -16,15 +16,15 @@ g.tokyonight_style = "storm"
 --> Material
 g.material_style = "deep ocean"
 
-for k, c in pairs(colorschemes) do
-  status_ok, _ = pcall(require, c)
-  if not status_ok then
+for _, c in pairs(colorschemes) do
+  local present, _ = pcall(require, c)
+  if not present then
     vim.notify("colorscheme " .. c .. " not found!")
   end
 end
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. default_colorscheme)
-if not status_ok then
+local present, _ = pcall(vim.cmd, "colorscheme " .. default_colorscheme)
+if not present then
   vim.notify("colorscheme " .. default_colorscheme .. " not found!")
   return
 end

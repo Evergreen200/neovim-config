@@ -1,26 +1,17 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.treesitter"
-require "user.autopairs"
-require "user.gitsigns"
-require "user.nvim-tree"
-require "user.bufferline"
-require "user.lualine"
---> ...
-require "user.notify"
-require "user.colorscheme"
-require "user.toggleterm"
-require "user.whichkey"
-
-require "user.alpha"
-require "user.project"
-require "user.indent-blankline"
-require "user.impatient"
---> ...
-
-require "user.neorg"
+-- require "user.neorg"
 -- require "user.markdown_preview"
+
+local utils = require "core.utils"
+
+local sources = {
+  "core.options",
+  "core.autocommands",
+  "core.keymaps",
+  "core.plugins",
+  "user.colorscheme",
+  "user.nvim-tree",
+}
+
+utils.load(sources)
+utils.impatient()
+-- utils.compiled()

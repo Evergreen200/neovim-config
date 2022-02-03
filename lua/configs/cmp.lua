@@ -1,10 +1,12 @@
-local cmp_status_ok, cmp = pcall(require, "cmp")
-if not cmp_status_ok then
+local M = {}
+function M.config()
+local cmp_present, cmp = pcall(require, "cmp")
+if not cmp_present then
   return
 end
 
-local snip_status_ok, luasnip = pcall(require, "luasnip")
-if not snip_status_ok then
+local snip_present, luasnip = pcall(require, "luasnip")
+if not snip_present then
   return
 end
 
@@ -131,3 +133,6 @@ cmp.setup {
     native_menu = false,
   },
 }
+end
+
+return M
