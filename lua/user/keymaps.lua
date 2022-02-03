@@ -79,4 +79,4 @@ keymap(
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- NvimTree
-keymap("n", "<S-f>", "<cmd>NvimTreeToggle<CR>", opts)
+-- keymap("n", "<S-f>", "<cmd>NvimTreeToggle<CR>", opts) -- no need

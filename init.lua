@@ -15,5 +15,12 @@ require "user.notify"
 require "user.colorscheme"
 require "user.toggleterm"
 require "user.whichkey"
+
+require "user.alpha"
+require "user.project"
+require "user.indent-blankline"
+require "user.impatient"
 --> ...
+
+require "user.neorg"
 -- require "user.markdown_preview"

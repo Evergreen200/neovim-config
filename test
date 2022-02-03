@@ -1,0 +1,55 @@
+local fn = vim.fn
+
+-- Auto stuff irrelevant
+if ...sdf
+end
+
+return packer.startup(function(use)) {
+    --> Miscellaneous
+    use "wbthomason/packer.nvim"
+
+
+  use "wbthomason/packer.nvim"
+  use "nvim-lua/popup.nvim"
+  use "nvim-lua/plenary.nvim"
+  use "windwp/nvim-autopairs"
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+  use "nvim-lualine/lualine.nvim"
+  use "akinsho/toggleterm.nvim"
+  use "rcarriga/nvim-notify"
+  use "folke/which-key.nvim"
+  use "goolord/alpha-nvim"
+
+  --> Colorscheme
+  use "rose-pine/neovim"
+  use "folke/tokyonight.nvim"
+  use "marko-cerovac/material.nvim"
+
+  --> cmp plugins
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+
+  --> Snippets
+  use "L3MON4D3/LuaSnip"
+  use "rafamadriz/friendly-snippets"
+
+  --> LSP
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"
+  use "jose-elias-alvarez/null-ls.nvim"
+
+  --> Telescope
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+
+  --> Git
+  use "lewis6991/gitsigns.nvim"
+}

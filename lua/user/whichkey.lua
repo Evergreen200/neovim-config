@@ -187,6 +187,7 @@ local mappings = {
 
   t = {
     name = "Terminal",
+    g = { "<cmd>lua _GLOW()<cr>", "GLow" },
     n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
     u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
     t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },

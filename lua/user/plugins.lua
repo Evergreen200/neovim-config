@@ -40,7 +40,7 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
+  --> Miscellaneous
   use "wbthomason/packer.nvim"
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
@@ -53,13 +53,13 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "rcarriga/nvim-notify"
   use "folke/which-key.nvim"
+  use "goolord/alpha-nvim"
+  use "ahmedkhalf/project.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
+  use "lewis6991/impatient.nvim"
 
   ----------------------------------------------
   --> Not implemented yet
-  --> use "ahmedkhalf/project.nvim"
-  --> use "lewis6991/impatient.nvim"
-  --> use "lukas-reineke/indent-blankline.nvim"
-  --> use "goolord/alpha-nvim"
   --> use "antoinemadec/FixCursorHold.nvim"     -- This is needed to fix lsp doc highlight"
   ----------------------------------------------
 
@@ -71,12 +71,12 @@ return packer.startup(function(use)
   --   conifg = "doautocmd mkdp_init  BufEnter",
   -- }
 
-  -- Colorscheme
+  --> Colorscheme
   use "rose-pine/neovim"
   use "folke/tokyonight.nvim"
   use "marko-cerovac/material.nvim"
 
-  -- cmp plugins
+  --> cmp plugins
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
@@ -85,20 +85,20 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
-  -- snippets
+  --> Snippets
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
 
-  -- LSP
+  --> LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
   use "jose-elias-alvarez/null-ls.nvim"
 
-  -- Telescope
+  --> Telescope
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
 
-  -- TreeSitter
+  --> TreeSitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -108,6 +108,9 @@ return packer.startup(function(use)
 
   --> Git
   use "lewis6991/gitsigns.nvim"
+
+  --> Documents/Note taking
+  use "nvim-neorg/neorg"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
