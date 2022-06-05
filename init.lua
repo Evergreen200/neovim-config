@@ -8,4 +8,6 @@ local sources = {
   "user.config",
 }
 
+require "configs.cmp"
+
 utils.core.load(sources)

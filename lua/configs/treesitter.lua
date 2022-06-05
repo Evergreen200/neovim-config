@@ -6,7 +6,7 @@ function M.config()
   if not configs then return end
 
    configs.setup {
-    ensure_installed = "maintained",
+    ensure_installed = "all",
     sync_install = false,
     ignore_install = { "" }, -- List of parsers to ignore installing
     autopairs = {
@@ -28,3 +28,5 @@ function M.config()
     },
   }
 end
+
+return M
