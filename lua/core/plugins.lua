@@ -27,14 +27,19 @@ return packer.startup(function(use)
 
   -- *Core Functionality*
   -- cmp plugins -> Completion
-  use {"hrsh7th/nvim-cmp", config = function() require("configs.cmp").config() end,}
+  use {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      require("configs.cmp").config()
+    end,
+  }
   -- use {
   --   "hrsh7th/nvim-cmp",
   --   -- config = function()
   --     -- require("configs.cmp").config()
   --   -- end,
-  -- }  
-  
+  -- }
+
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
@@ -45,6 +50,17 @@ return packer.startup(function(use)
   -- Snippets
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
+
+  -- Icons
+  use "kyazdani42/nvim-web-devicons"
+  -- use "kyazdani42/nvim-tree.lua"
+
+  use {
+    "akinsho/bufferline.nvim",
+    config = function()
+      require("configs.bufferline").config()
+    end,
+  }
 
   -- **Autopairs**
   use {
@@ -63,7 +79,7 @@ return packer.startup(function(use)
     end,
     run = ":TSUpdate",
   }
-  
+
   -- LSP
   use {
     "neovim/nvim-lspconfig",
