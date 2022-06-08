@@ -53,7 +53,12 @@ return packer.startup(function(use)
 
   -- Icons
   use "kyazdani42/nvim-web-devicons"
-  -- use "kyazdani42/nvim-tree.lua"
+  use {
+    "kyazdani42/nvim-tree.lua",
+    config = function()
+      require("configs.nvim-tree").config()
+    end,
+  }
 
   use {
     "akinsho/bufferline.nvim",
@@ -61,6 +66,8 @@ return packer.startup(function(use)
       require("configs.bufferline").config()
     end,
   }
+
+  use "moll/vim-bbye"
 
   -- **Autopairs**
   use {

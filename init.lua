@@ -1,3 +1,4 @@
+-- look how to make this global
 local utils = require "utils"
 
 local sources = {
@@ -7,7 +8,5 @@ local sources = {
   "core.plugins",
   "user.config",
 }
-
-require "configs.cmp"
 
 utils.core.load(sources)
