@@ -63,6 +63,13 @@ return packer.startup(function(use)
 
   use "moll/vim-bbye"
 
+  use {
+    "nvim-lualine/lualine.nvim",
+    config = function()
+      require("configs.lualine").config()
+    end,
+  }
+
   -- **Autopairs**
   use {
     "windwp/nvim-autopairs",
