@@ -33,12 +33,6 @@ return packer.startup(function(use)
       require("configs.cmp").config()
     end,
   }
-  -- use {
-  --   "hrsh7th/nvim-cmp",
-  --   -- config = function()
-  --     -- require("configs.cmp").config()
-  --   -- end,
-  -- }
 
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
