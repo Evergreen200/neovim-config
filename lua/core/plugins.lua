@@ -108,7 +108,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope-media-files.nvim"
   -- ---------------
   -- Aesthetics
-  use "rose-pine/neovim"
+  use "folke/tokyonight.nvim"
 
   -- Automatically set up the configuration after cloning 'packer.nvim'
   -- Must be after all plugins
